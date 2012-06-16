@@ -30,8 +30,8 @@ From/ago:
 * 3 years ago
 
 Addition/subtraction:
-today + 5 weeks
-yesterday - 2 weeks
+* today + 5 weeks
+* yesterday - 2 weeks
 
 
 Notes
