@@ -93,7 +93,7 @@ by Ethan Blackwelder
 	</target>
 
 	<target name="jar-full" depends="compile-full" description="Creates a min JAR of the application">
-		<jar destfile="${dist.home}/${jar.name}">
+		<jar destfile="${dist.home}${file.separator}${jar.name}">
 			<manifest>
 				<attribute name="Created-By" value="${app.author}"/>
 				<attribute name="Built-By" value="${user.name} - ${ant.version}"/>
@@ -111,7 +111,7 @@ by Ethan Blackwelder
 
 	<target name="zip-src" depends="prepare" description="Creates a ZIP of the source code">
 		<property name="base-prefix" value="${app.name}-${app.version}"/>
-		<zip destfile="${zip.name.src}">
+		<zip destfile="${dist.home}${file.separator}${zip.name.src}">
 			<zipfileset dir="${basedir}" prefix="${base-prefix}">
 				<include name="build.xml"/>
 				<include name="ant2html.xsl"/>
