@@ -17,6 +17,9 @@ How to use the `DateParser`:
     System.out.println(DateParser.parseDate("3 years before last Tuesday"));
     System.out.println(DateParser.parseDate("2 months ago - 3 days"));
     ...
+    
+    System.out.println(DateParser.safeParseDate("gobble-de-gook")); //Un-recognized date strings parse to the current date/time
+    
 
 Accepted Formats
 ================
