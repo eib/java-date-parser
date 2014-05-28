@@ -8,18 +8,20 @@ Sample Code
 ===========
 How to use the `DateParser`:
 
-    import com.eblackwelder.date.DateParser;
-    
-    ...
-    System.out.println(DateParser.parseDate("today"));
-    System.out.println(DateParser.parseDate("2 days before yesterday"));
-    System.out.println(DateParser.parseDate("next Friday"));
-    System.out.println(DateParser.parseDate("3 years before last Tuesday"));
-    System.out.println(DateParser.parseDate("2 months ago - 3 days"));
-    ...
-    //Un-recognized date strings parse to the current date/time:
-    System.out.println(DateParser.safeParseDate("gobble-de-gook"));
-    
+```java
+import com.eblackwelder.date.DateParser;
+
+...
+System.out.println(DateParser.parseDate("today"));
+System.out.println(DateParser.parseDate("2 days before yesterday"));
+System.out.println(DateParser.parseDate("next Friday"));
+System.out.println(DateParser.parseDate("3 years before last Tuesday"));
+System.out.println(DateParser.parseDate("2 months ago - 3 days"));
+...
+
+//Un-recognized date strings parse to the current date/time:
+System.out.println(DateParser.safeParseDate("gobble-de-gook"));
+```
 
 Accepted Formats
 ================
